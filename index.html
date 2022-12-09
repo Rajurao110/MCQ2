@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+<style>
+  body{
+    font-size :50px ;
+    padding :50px ;
+    background-size :50px ;
+    background-color :#00ccff ;
+  }
+
+  #inp1:hover{
+    position :relative ;
+    background-color :#00ff33;
+    box-shadow :0px 10px 20px 0px #00ff66 ;
+  }
+  #inp0:hover{
+    position :relative ;
+    background-color:#ff0033;
+    box-shadow :0px 10px 20px 0px #ff0033;
+  }
+    p{
+    position :relative ;
+    width :400px ;
+    height :80px ;
+    left :0px ;
+    text-align: center ;
+    border-radius :50px ;
+    box-shadow :0px 10px 10px 0px gray;
+background-color :white ;
+
+  }
+  #con{
+    position :relative ;
+    border-radius :20px 20px 500px 500px ;
+    height :200px ;
+    padding :50px ;
+    width :53%;
+    bottom :80px ;
+    left:10px;
+    top:280px ;
+    margin :auto ;
+    display :block ;
+    transition :1s;
+    background-color :white ;
+    box-shadow :0px 30px 50px 0px grey ;
+  }
+
+  h5{
+    position :relative ;
+    box-shadow :0px 10px 10px 0px grey ;
+    padding :50px ;
+    background-color :#00ccff;
+    border-radius :50px ;
+    transition :5s ;
+  }
+ 
+  #myBtn1{
+    position :relative ;
+    height :100px ;
+    bottom :50px ;
+    border-radius :20px ;
+    border: 2px solid black ;
+    left :15%;
+    top:30px ;
+    font-size :50px ;
+    background-color : #ffff33 ;
+  }
+  #myBtn{
+    position :relative;
+    height :100px;
+    border-radius :20px;
+    color :white ;
+    border :hidden ;
+    left :20%;
+    font-size :50px;
+    background-color : red;
+  }
+#question{
+  opacity :0%;
+  transition :5s ;
+}
+.head{
+  position :relative ;
+  width :800px ;
+  left:5%;
+  height :800px ;
+  background-color :#00ccff ;
+  box-shadow :0px 50px 50px 0px black ;
+  border-radius :1000px ;
+}
+.white{
+  position :relative ;
+  width :650px ;
+  height :600px;
+  background-color :white ;
+  left :75px ;
+  top:200px ;
+  border-radius :1000px;
+}
+.leye{
+  position :relative ;
+  width :200px ;
+  height :250px;
+  background-color :white ;
+  left :108px ;
+  bottom :110px ;
+  border:2px solid black ;
+  border-radius :1000%;
+}
+.reye{
+  position :relative ;
+  width :200px ;
+  height :250px;
+  background-color :white ;
+  left :48% ;
+  bottom :60% ;
+  border:2px solid black ;
+  border-radius :1000%;
+  
+}
+.dot1{
+  position :relative ;
+  width :20px ;
+  height :35px;
+  background-color :white ;
+  left :115px ;
+  top :110px ;
+  border:20px solid black ;
+  border-radius :1000%;
+}
+.dot2{
+  position :relative ;
+  width :20px ;
+  height :35px;
+  background-color :white ;
+  left :25px ;
+  top :105px ;
+  border:20px solid black ;
+  border-radius :1000%;
+} 
+.nose {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    left: 258px;
+    bottom : 415px;
+    border: 2px solid black;
+    border-radius: 1000%;
+  }
+.mouth{
+    position: relative;
+    width: 500px;
+    height: 250px;
+    background-color: red;
+    left: 70px;
+    bottom : 355px;
+    border: 2px solid black;
+    border-radius: 0px 0px 1000px 1000px;
+  }
+.redline{
+    position: relative;
+    width: 70%;
+    height: 30px;
+    background-color: red;
+    left: 15%;
+    bottom : 350px;
+    border: 2px solid black;
+    border-radius: 50px;
+    z-index :1;
+  }
+#body{
+    position: relative;
+    width: 650px;
+    height: 800px;
+    background-color: #00ccff ;
+    box-shadow :0px 50px 50px 0px black ;
+    left: 0px;
+    bottom: 360px;
+    border-radius: 100px;
+    margin :auto ;
+    display :block ;
+
+  }
+.hand1{
+  position :relative ;
+  width:150px;
+  height :300px;
+  background-color :#00ccff ;
+  border-radius :500% 500% 50% 300%;
+  right:38px;
+  bottom :28px;
+  border :0px solid black ;
+  transform :rotate(40deg);
+}
+.hand2{
+  position :relative ;
+  width:150px;
+  height :300px;
+  background-color :#00ccff ;
+  border-radius :500% 500% 300% 50%;
+  left:538px;
+  bottom :330px;
+  border :px solid black ;
+  transform :rotate(-40deg);
+} 
+.finger1{
+  position :relative ;
+  width:150px;
+  height :150px;
+  background-color :white ;
+  border-radius :100px;
+  left:0px;
+  top:250px;
+}
+.finger2{
+  position :relative ;
+  width:150px;
+  height :150px;
+  background-color :white ;
+  border-radius :100px;
+  left:0px;
+  top:250px;
+} 
+#stomach {
+    position: relative;
+    width: 600px;
+    height: 700px;
+    background-color: white;
+    border-radius: 400px 400px 100px 100px;
+    right: 0px;
+    top : 130px;
+    margin :auto;
+    display :block;
+
+}
+.foot1{
+  position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: white ;
+    border-radius: 100px ;
+    right:40px ;
+    top : 130px;
+   
+}
+.foot2{
+  position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: white ;
+    border-radius: 100px ;
+    left:400px ;
+    bottom : 68px;
+    
+}
+</style>
+
+<body>
+<script>
+function addition(){
+  document.getElementById("con").style.height = "10150px";
+  document.getElementById("question").style.opacity = "100%";
+  document.getElementById("stomach").style.height = "10630px";
+ var radius = document.getElementById("stomach").style.border-radius;
+ radius="100% 100% 100% 100%";
+ document.getElementById("body").style.height = "10700px";
+ document.getElementById("foota").style.top = "10050px";
+document.getElementById("footb").style.bottom = "-9850px";
+  
+}
+  function touchmenow1(){
+    document.getElementById("inp1").value = alert("CORRECT ANSWER");
+  }
+  function touchmenow0(){
+    document.getElementById("inp0").value = alert("WRONG ANSWER");
+  }
+ function addition1(){
+  document.getElementById("con").style.height = "200px";
+  document.getElementById("question").style.opacity = "0%";
+  document.getElementById("question").style.transition = "1s";
+  document.getElementById("stomach").style.height = "700px";
+  document.getElementById("stomach").style.transition = "1s";
+  document.getElementById("body").style.height = "800px";
+  document.getElementById("body").style.transition = "1s";
+  document.getElementById("foota").style.top = "130px";
+  document.getElementById("foota").style.transition = "1s";
+  document.getElementById("footb").style.bottom = "68px";
+  document.getElementById("footb").style.transition = "1s";
+  
+  let mybutton = document.getElementById("myBtn");
+ 
+  window.onscroll = function() { scrollFunction() };
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+</script>
+<div class="head">
+  
+  <div class="white">
+    
+    <div class="leye"><div class="dot1"></div></div><div class="reye"><div class="dot2"></div></div>
+    
+    <div class="nose"></div>
+    
+    <div class="mouth"></div>
+    <div class="redline">
+      <button onclick="addition()" id="myBtn1">Click To Start </button>
+    </div>
+    <div id="body"><div class="hand1"><div class="finger1"></div></div><div class="hand2"><div class="finger2"></div></div><div id="foota" class="foot1"></div><div id="footb" class="foot2"></div></div>
+    
+  </div>
+   <div id="stomach"></div>
+</div>
+
+<div id="con">
+  
+  <div id="question">
+  <h5>1. What is the size of the int data type?</h5>
+  <ol >
+<p onclick="touchmenow1()" id="inp1">4 bytes</p>
+<p onclick="touchmenow0()" id="inp0">1 bytes</p>
+<p onclick="touchmenow0()" id="inp0">8 bytes</p>
+<p onclick="touchmenow0()" id="inp0">2 bytes</p>
+  </ol><br><br>
+  
+  <h5>2. Which among the following operators cannot be overloaded?</h5>
+  <ol>
+<p onclick="touchmenow0()" id="inp0">-</p>
+<p onclick="touchmenow0()" id="inp0">+</p>
+<p onclick="touchmenow1()" id="inp1">? :</p>
+<p onclick="touchmenow0()" id="inp0">%</p>
+  </ol>
+  
+    <h5>3. What among these is used to return the number of characters in the string?</h5>
+  <ol >
+<p onclick="touchmenow0()" id="inp0">size</p>
+<p onclick="touchmenow0()" id="inp0">length</p>
+<p onclick="touchmenow1()" id="inp1">size and length</p>
+<p onclick="touchmenow0()" id="inp0">name</p>
+  </ol><br><br>
+    <h5>4. Which of the following user-defined header file extension used in c++?</h5>
+  <ol >
+<p onclick="touchmenow0()" id="inp0">hg</p>
+<p onclick="touchmenow1()" id="inp1">cpp</p>
+<p onclick="touchmenow0()" id="inp0">h</p>
+<p onclick="touchmenow0()" id="inp0">hf</p>
+  </ol><br><br>
+    <h5>5. Which of the following approach is used by C++?</h5>
+  <ol >
+<p onclick="touchmenow0()" id="inp0">left-right</p>
+<p onclick="touchmenow0()" id="inp0">right-left</p>
+<p onclick="touchmenow1()" id="inp1">bottom-top</p>
+<p onclick="touchmenow0()" id="inp0">top-bottom</p>
+  </ol><br><br>
+    <h5>6. Which of the following correctly declares an array in C++?</h5>
+  <ol >
+<p onclick="touchmenow0()" id="inp0">array{10}</p>
+<p onclick="touchmenow0()" id="inp0">arr arr[10]</p>
+<p onclick="touchmenow0()" id="inp0">int array;</p>
+<p onclick="touchmenow1()" id="inp1">int array[10];</p>
+  </ol><br><br>
+    <h5>7. what is size of float datatype ?</h5>
+  <ol >
+<p onclick="touchmenow0()" id="inp0">1 bytes</p>
+<p onclick="touchmenow0()" id="inp0">2 bytes</p>
+<p onclick="touchmenow0()" id="inp0">6 bytes</p>
+<p onclick="touchmenow1()" id="inp1">4 bytes</p>
+  </ol><br><br>
+    <h5>8. Identify the scope resolution operator.</h5>
+  <ol >
+<p onclick="touchmenow0()" id="inp0">:</p>
+<p onclick="touchmenow1()" id="inp1">::</p>
+<p onclick="touchmenow0()" id="inp0">?</p>
+<p onclick="touchmenow0()" id="inp0">none</p>
+  </ol><br><br>
+    <h5>9. When was the c++ invented ?</h5>
+  <ol >
+<p onclick="touchmenow0()" id="inp0">1975</p>
+<p onclick="touchmenow1()" id="inp1">1979</p>
+<p onclick="touchmenow0()" id="inp0">1982</p>
+<p onclick="touchmenow0()" id="inp0">1985</p>
+  </ol><br><br>
+    <h5>10. Who invented c++ ?</h5>
+  <ol >
+<p onclick="touchmenow0()" id="inp0">Tim Barnes lee</p>
+<p onclick="touchmenow0()" id="inp0">Denise Ritchie</p>
+<p onclick="touchmenow0()" id="inp0">Elon Musk</p>
+<p onclick="touchmenow1()" id="inp1">Bjarne Stroustrup</p>
+  </ol><br>
+  
+  <button onclick="addition1()"  id="myBtn" title="Go to top">Click To End</button>
+  </div>
+</div>
+
+</html>
+</body>
+</html>
